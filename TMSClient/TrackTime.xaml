@@ -1,0 +1,40 @@
+﻿<Page x:Class="TMSClient.TrackTime"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TMSClient"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="TrackTime">
+
+    <Grid Margin="0,0,-314,-78">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="109" Margin="99,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="199"/>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="110" Margin="99,71,0,0" Stroke="Black" VerticalAlignment="Top" Width="411"/>
+
+        <Label x:Name="label" Content="Select an employee and a project" HorizontalAlignment="Left" Margin="112,71,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreateTask" Content="Button" HorizontalAlignment="Left" Margin="266,347,0,0" VerticalAlignment="Top" Width="75" Click="btnCreateTask_Click"/>
+        <ComboBox x:Name="comboBoxEmployees" HorizontalAlignment="Left" Margin="112,117,0,0" VerticalAlignment="Top" Width="109" Height="20" Text="Employee" SelectedIndex="0"/>
+        <ComboBox x:Name="comboBoxProjects" HorizontalAlignment="Left" Margin="266,117,0,0" VerticalAlignment="Top" Width="176" Height="20" Text="Poject" SelectedIndex="0"/>
+        <DatePicker x:Name="datePickerStart" HorizontalAlignment="Left" Margin="112,223,0,0" VerticalAlignment="Top" Height="27" Width="109" Text="Start date">
+
+        </DatePicker>
+        <Label x:Name="label1" Content="Task start time" HorizontalAlignment="Left" Margin="112,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.083,-0.177" Width="109"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="109" Margin="309,186,0,0" Stroke="Black" VerticalAlignment="Top" Width="199"/>
+        <DatePicker x:Name="datePickerEnd" HorizontalAlignment="Left" Margin="322,223,0,0" VerticalAlignment="Top" Height="27" Width="109" Text="Start date">
+
+        </DatePicker>
+        <Label x:Name="label1_Copy" Content="Task end time" HorizontalAlignment="Left" Margin="322,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.083,-0.177" Width="109"/>
+        <TextBox x:Name="txtBoxTimeStart" HorizontalAlignment="Left" Height="27" Margin="226,222,0,0" TextWrapping="Wrap" Text="12:00" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtBoxTimeEnd" HorizontalAlignment="Left" Height="27" Margin="436,222,0,0" TextWrapping="Wrap" Text="12:00" VerticalAlignment="Top" Width="59"/>
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="182,303,0,0" VerticalAlignment="Top" FontSize="20" Foreground="Red"/>
+        <Label x:Name="label2" Content="Create new task" HorizontalAlignment="Left" Margin="240,-2,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="label3" Content="Name:" HorizontalAlignment="Left" Margin="99,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="149,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="label4" Content="Description:" HorizontalAlignment="Left" Margin="251,33,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxDescription" HorizontalAlignment="Left" Height="23" Margin="329,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
+        <Label x:Name="lblWaiting" Content="Waiting For Data Load..." HorizontalAlignment="Left" Margin="309,71,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
